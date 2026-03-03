@@ -48,6 +48,8 @@ Execute the provided scripts within the shared folder to automate the environmen
 - `setup_sshd.sh`: Configures SSH daemon settings.
 - `sshd_add_pub_key.sh`: Adds your public key to the VM's authorized keys.
 - `setup_podman.sh`: Configures Podman for use with VS Code.
+- `copy_ssh_files.sh`: Copies your SSH files to `~/.ssh`.
+- `setup_ssh-agent.sh`: Configures `ssh-agent` for use with containers. (Refers to [Sharing Git credentials with your container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials))
 
 ### 5. Configure Host SSH Access
 Edit the `~/.ssh/config` file on your **Host machine**:

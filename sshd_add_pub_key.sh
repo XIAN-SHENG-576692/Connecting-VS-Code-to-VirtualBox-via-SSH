@@ -3,7 +3,7 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
 echo "--- Setting up SSH Authorized Keys ---"
-read -p "Paste your SSH Public Key OR the local path to your .pub file (or press Enter to skip): " PUB_KEY
+read -p "Please enter the SSH Public Key OR the local path to the .pub file (or press Enter to skip): " PUB_KEY
 
 if [ -n "$PUB_KEY" ]; then
     # Determine the actual user (even if running via sudo)
